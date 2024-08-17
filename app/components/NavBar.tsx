@@ -2,14 +2,6 @@
 
 import Link from "next/link";
 import React from "react";
-import {
-  MessageOutlined,
-  DataSaverOffOutlined,
-  Groups2Outlined,
-  SettingsOutlined,
-  SmsOutlined,
-  Person2Outlined,
-} from "@mui/icons-material";
 import { usePathname } from "next/navigation";
 import { clsx } from "clsx";
 import { Navigations, navigations } from "@/models/navigations";

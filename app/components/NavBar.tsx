@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import React from "react";
 import {
@@ -8,34 +10,51 @@ import {
   SmsOutlined,
   Person2Outlined,
 } from "@mui/icons-material";
+import { usePathname } from "next/navigation";
+import { clsx } from "clsx";
+import { Navigations, navigations } from "@/models/navigations";
 
 const NavBar = () => {
+  const pathname = usePathname();
+  const navs: Navigations = navigations;
+
   return (
-    <div className="bg-gray-200 shadow-lg float-left h-screen p-2 flex flex-col justify-between">
+    <div className="bg-gray-200 border-1 border-gray-100 float-left h-screen p-2 flex flex-col justify-between">
       <div className="flex flex-col gap-3">
-        <Link
-          href={`/Chats`}
-          className="rounded-full p-2 focus:outline-none focus:bg-gray-400 "
-        >
-          <MessageOutlined />
-        </Link>
-        <Link href={`/Status`} className="rounded-full p-2 focus:outline-none focus:bg-gray-400">
-          <DataSaverOffOutlined />
-        </Link>
-        <Link href={`/Channels`} className="rounded-full p-2 focus:outline-none focus:bg-gray-400">
-          <SmsOutlined />
-        </Link>
-        <Link href={`/Community`} className="rounded-full p-2 focus:outline-none focus:bg-gray-400">
-          <Groups2Outlined />
-        </Link>
+        {navs.upperNav.map((nav) => {
+          return (
+            <Link
+              href={nav.href}
+              key={nav.name}
+              className={clsx(
+                "rounded-full flex items-center justify-center p-2 focus:outline-none focus:bg-gray-300 text-gray-600 font-bold",
+                {
+                  "bg-gray-300": pathname === nav.href,
+                }
+              )}
+            >
+              {pathname === nav.href ? <nav.iconFilled /> : <nav.icon />}
+            </Link>
+          );
+        })}
       </div>
       <div className="flex flex-col gap-3">
-        <Link href={`/Settings`} className="rounded-full p-2 focus:outline-none focus:bg-gray-400">
-          <SettingsOutlined />
-        </Link>
-        <Link href={`/Profile`} className="rounded-full p-2 focus:outline-none focus:bg-gray-400">
-          <Person2Outlined />
-        </Link>
+        {navs.lowerNav.map((nav) => {
+          return (
+            <Link
+              href={nav.href}
+              key={nav.name}
+              className={clsx(
+                "rounded-full flex items-center justify-center p-2 focus:outline-none focus:bg-gray-300 text-gray-600 font-bold",
+                {
+                  "bg-gray-300": pathname === nav.href,
+                }
+              )}
+            >
+              {pathname === nav.href ? <nav.iconFilled /> : <nav.icon />}
+            </Link>
+          );
+        })}
       </div>
     </div>
   );

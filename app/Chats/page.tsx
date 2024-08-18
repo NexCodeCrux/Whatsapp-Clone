@@ -1,9 +1,19 @@
-import React from 'react'
+import Chat, { ArchiveChat } from "../components/Chat";
+import ChatHeader from "../components/ChatHeader";
 
 const Chats = () => {
   return (
-    <div>Chats Page</div>
-  )
-}
+    <section className="h-screen w-full">
+      <div className="flex h-full flex-col">
+        <ChatHeader />
+        <hr />
+        <div className="flex-grow overflow-y-auto">
+          <ArchiveChat />
+          <Chat />
+        </div>
+      </div>
+    </section>
+  );
+};
 
-export default Chats
+export default Chats;

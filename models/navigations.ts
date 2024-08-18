@@ -1,25 +1,22 @@
 import {
-  MessageOutlined,
-  MessageRounded,
-  DataSaverOffOutlined,
-  DataSaverOffRounded,
-  Groups2Outlined,
-  Groups2Rounded,
-  SettingsOutlined,
-  SettingsRounded,
-  SmsOutlined,
-  SmsRounded,
-  Person2Outlined,
-  Person2Rounded,
-} from "@mui/icons-material";
-import SvgIcon from "@mui/material/SvgIcon";
-type SvgIconComponent = typeof SvgIcon;
+  ChannelIconOutline,
+  ChannelIconRounded,
+  ChatsIconOutlined,
+  ChatsIconRounded,
+  CommunityIconOutlined,
+  CommunityIconRouned,
+  SettingIconOutlined,
+  SettingIconRounded,
+  StatusIconOutlined,
+  StatusIconRounded,
+} from "@/app/components/CustomIcons";
+import { Person2Outlined, Person2Rounded } from "@mui/icons-material";
 
 interface Navigation {
   href: string;
   name: string;
-  icon: SvgIconComponent;
-  iconFilled: SvgIconComponent;
+  icon: JSX.ElementType;
+  iconFilled: JSX.ElementType;
 }
 
 export interface Navigations {
@@ -32,34 +29,34 @@ export const navigations: Navigations = {
     {
       href: "/Chats",
       name: "Chats",
-      icon: MessageOutlined,
-      iconFilled: MessageRounded,
+      icon: ChatsIconOutlined,
+      iconFilled: ChatsIconRounded,
     },
     {
       href: "/Status",
       name: "Status",
-      icon: DataSaverOffOutlined,
-      iconFilled: DataSaverOffRounded,
+      icon: StatusIconOutlined,
+      iconFilled: StatusIconRounded,
     },
     {
       href: "/Channels",
       name: "Channels",
-      icon: SmsOutlined,
-      iconFilled: SmsRounded,
+      icon: ChannelIconOutline,
+      iconFilled: ChannelIconRounded,
     },
     {
       href: "/Community",
       name: "Community",
-      icon: Groups2Outlined,
-      iconFilled: Groups2Rounded,
+      icon: CommunityIconOutlined,
+      iconFilled: CommunityIconRouned,
     },
   ],
   lowerNav: [
     {
       href: "/Settings",
       name: "Settings",
-      icon: SettingsOutlined,
-      iconFilled: SettingsRounded,
+      icon: SettingIconOutlined,
+      iconFilled: SettingIconRounded,
     },
     {
       href: "/ProfileProfile",

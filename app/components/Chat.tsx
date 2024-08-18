@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { PinnedIconRounded } from "./CustomIcons";
 
 const Chat = () => {
   return (
@@ -19,10 +20,14 @@ const Chat = () => {
         </div>
         <div className="w-full flex items-center overflow-hidden">
           <div className="whitespace-nowrap text-nowrap overflow-hidden text-ellipsis text-sm text-gray-500">
-            Lorem ipsum dolor kbnaksd lkjsnjl lkansd  iuehifue ouihefioa kuajehfi uioehoaihf
+            Lorem ipsum dolor kbnaksd lkjsnjl lkansd iuehifue ouihefioa kuajehfi
+            uioehoaihf
           </div>
-          <div className="flex items-center justify-center bg-green-500 rounded-full h-[20px] w-[23px]">
-            <span className="text-xs font-bold text-white p-1">1</span>
+          <div className="flex gap-1 items-center justify-center ml-1">
+            <div className="flex items-center justify-center bg-green-500 rounded-full h-[20px] w-[22px]">
+              <span className="text-xs font-bold text-white p-1">1</span>
+            </div>
+            <PinnedIconRounded className="text-gray-600" />
           </div>
         </div>
       </div>

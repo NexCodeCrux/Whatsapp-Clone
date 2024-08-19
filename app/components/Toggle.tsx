@@ -28,8 +28,8 @@ const Toggle = () => {
       className="flex items-center dark:bg-[#111B21] rounded-full shadow-md p-2 cursor-pointer w-[15]px h-8"
       onClick={() => setDarkMode(!darkMode)}
     >
-      <ModeNight className="text-gray-200" />
-      <WbSunny className="text-[#111B21]"/>
+      <WbSunny className="text-gray-200" />
+      <ModeNight className="text-[#111B21]"/>
       <div className="bg-white dark:bg-[#111B21] w-full h-6 rounded-full shadow-md transform transition-colors duration-200"></div>
     </div>
   );

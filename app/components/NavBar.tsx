@@ -12,7 +12,7 @@ const NavBar = () => {
   const navs: Navigations = navigations;
 
   return (
-    <div className="bg-gray-200 border-1 border-gray-100 float-left h-screen p-2 flex flex-col justify-between">
+    <div className="dark:bg-[#111B21] bg-gray-200 border-1 border-gray-100 float-left h-screen p-2 flex flex-col justify-between">
       <div className="flex flex-col gap-3">
         {navs.upperNav.map((nav) => {
           return (
@@ -35,7 +35,7 @@ const NavBar = () => {
       <div className="transform rotate-90">
         <Toggle />
       </div>
-      
+
       <div className="flex flex-col gap-3">
         {navs.lowerNav.map((nav) => {
           return (

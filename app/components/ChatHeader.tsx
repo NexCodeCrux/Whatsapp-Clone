@@ -6,7 +6,7 @@ const ChatHeader = () => {
     <div className="flex flex-col gap-1 mb-2">
       <div className="flex justify-between items-center px-5 py-3">
         <h2 className="font-bold text-xl">Chats</h2>
-        <div className="flex items-center gap-4 font-bold text-gray-600">
+        <div className="flex items-center gap-4 font-bold">
           <Link
             className="rounded-full cursor-pointer flex items-center justify-center p-2"
             href="/Chats/new"
@@ -16,7 +16,7 @@ const ChatHeader = () => {
               height="24"
               width="24"
               preserveAspectRatio="xMidYMid meet"
-              className="text-gray-500"
+              className="text-wa-dark-primary dark:text-wa-dark-secondary_lighter"
               fill="none"
             >
               <title>new-chat-outline</title>
@@ -36,13 +36,13 @@ const ChatHeader = () => {
         </div>
       </div>
       <div className="w-full flex items-center gap-2 px-3">
-        <div className="flex-grow flex items-center py-1 px-2 border-none bg-gray-100 rounded-md">
+        <div className="flex-grow flex items-center py-1 px-2 border-none bg-gray-100 dark:bg-wa-dark-background-lighter rounded-md">
           <svg
             viewBox="0 0 24 24"
             height="24"
             width="24"
             preserveAspectRatio="xMidYMid meet"
-            className="text-gray-500"
+            className="text-wa-light-secondary_lighter"
             version="1.1"
             x="0px"
             y="0px"
@@ -57,7 +57,7 @@ const ChatHeader = () => {
           <input
             type="text"
             placeholder="Search"
-            className="flex-grow placeholder:text-gray-600 px-4 ml-2 bg-transparent focus:bg-transparent active:bg-transparent active:outline-none focus:outline-none text-sm"
+            className="flex-grow placeholder:text-wa-light-secondary_lighter px-4 ml-2 bg-transparent focus:bg-transparent active:bg-transparent active:outline-none focus:outline-none text-sm"
           />
         </div>
         <svg
@@ -65,7 +65,7 @@ const ChatHeader = () => {
           height="20"
           width="20"
           preserveAspectRatio="xMidYMid meet"
-          className="text-gray-600 cursor-pointer"
+          className="text-wa-light-secondary_lighter cursor-pointer"
           fill="none"
         >
           <title>filter</title>

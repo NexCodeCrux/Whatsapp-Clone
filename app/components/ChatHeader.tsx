@@ -16,7 +16,7 @@ const ChatHeader = () => {
               height="24"
               width="24"
               preserveAspectRatio="xMidYMid meet"
-              className="text-wa-light-icon"
+              className="text-wa-dark-primary dark:text-wa-dark-secondary_lighter"
               fill="none"
             >
               <title>new-chat-outline</title>

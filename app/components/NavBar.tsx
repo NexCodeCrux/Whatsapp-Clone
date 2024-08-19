@@ -12,7 +12,7 @@ const NavBar = () => {
   const navs: Navigations = navigations;
 
   return (
-    <div className="dark:bg-[#111B21] bg-gray-200 border-1 border-gray-100 float-left h-screen p-2 flex flex-col justify-between">
+    <div className="dark:bg-wa-dark-primary bg-wa-light-secondary_lighter border-1 float-left h-screen p-2 flex flex-col items-center justify-between">
       <div className="flex flex-col gap-3">
         {navs.upperNav.map((nav) => {
           return (
@@ -20,9 +20,9 @@ const NavBar = () => {
               href={nav.href}
               key={nav.name}
               className={clsx(
-                "rounded-full flex items-center justify-center p-2 focus:outline-none focus:bg-gray-300 text-gray-600 font-bold",
+                "rounded-full text-wa-light-icon dark:text-wa-light-icon flex items-center justify-center p-2 w-[40px] h-[40px]",
                 {
-                  "bg-gray-300": pathname === nav.href,
+                  "bg-wa-light-secondary_lighter dark:bg-wa-dark-secondary": pathname === nav.href,
                 }
               )}
             >
@@ -43,9 +43,9 @@ const NavBar = () => {
               href={nav.href}
               key={nav.name}
               className={clsx(
-                "rounded-full flex items-center justify-center p-2 focus:outline-none focus:bg-gray-300 text-gray-600 font-bold",
+                "rounded-full text-wa-light-icon dark:text-wa-light-icon flex items-center justify-center p-2 w-[40px] h-[40px]",
                 {
-                  "bg-gray-300": pathname === nav.href,
+                  "bg-wa-light-secondary_lighter dark:bg-wa-dark-secondary": pathname === nav.href,
                 }
               )}
             >

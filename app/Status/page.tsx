@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import Statuts from "../components/Statuts";
 
 const Status = () => {
   return (
-    <div>Status</div>
-  )
-}
+    <div>
+      <Statuts />
+    </div>
+  );
+};
 
-export default Status
+export default Status;

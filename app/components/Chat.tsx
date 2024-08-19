@@ -4,7 +4,7 @@ import { PinnedIconRounded } from "./CustomIcons";
 const Chat = () => {
   return (
     <div className="w-full flex items-center overflow-x-hidden hover:bg-gray-100 cursor-pointer">
-      <div className="w-[90px] flex justify-center py-3 items-center">
+      <div className="w-[90px] flex justify-center px-1 items-center">
         <Image
           alt="user profile"
           src="/user.jpg"

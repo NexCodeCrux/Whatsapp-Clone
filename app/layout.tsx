@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="dark:bg-[#0B141A] dark:text-[#E9EDEF]">
         <NavBar />
         <Preview />
         {children}

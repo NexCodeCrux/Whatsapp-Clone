@@ -3,8 +3,8 @@ import { PinnedIconRounded } from "./CustomIcons";
 
 const Chat = () => {
   return (
-    <div className="w-full flex items-center overflow-x-hidden hover:bg-gray-100 cursor-pointer">
-      <div className="w-[90px] flex justify-center py-3 items-center">
+    <div className=" dark:text-[#E9EDEF] dark:hover:bg-[#111B21] w-full flex items-center overflow-x-hidden hover:bg-gray-100 cursor-pointer">
+      <div className="w-[90px] flex justify-center px-1 items-center">
         <Image
           alt="user profile"
           src="/user.jpg"
@@ -19,7 +19,7 @@ const Chat = () => {
           <span className="text-xs text-gray-500">Sunday</span>
         </div>
         <div className="w-full flex items-center overflow-hidden">
-          <div className="whitespace-nowrap text-nowrap overflow-hidden text-ellipsis text-sm text-gray-500">
+          <div className="whitespace-nowrap text-nowrap overflow-hidden text-ellipsis text-sm text-[#8696A0]">
             Lorem ipsum dolor kbnaksd lkjsnjl lkansd iuehifue ouihefioa kuajehfi
             uioehoaihf
           </div>

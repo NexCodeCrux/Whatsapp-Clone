@@ -3,7 +3,7 @@ import ChatHeader from "../components/ChatHeader";
 
 const Chats = () => {
   return (
-    <section className="h-screen w-full">
+    <section className="dark:text-[#E9EDEF] h-screen w-full">
       <div className="flex h-full flex-col">
         <ChatHeader />
         <hr />

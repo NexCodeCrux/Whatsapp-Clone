@@ -5,13 +5,14 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import { clsx } from "clsx";
 import { Navigations, navigations } from "@/models/navigations";
+import Toggle from "./Toggle";
 
 const NavBar = () => {
   const pathname = usePathname();
   const navs: Navigations = navigations;
 
   return (
-    <div className="bg-gray-200 border-1 border-gray-100 float-left h-screen p-2 flex flex-col justify-between">
+    <div className="dark:bg-[#111B21] bg-gray-200 border-1 border-gray-100 float-left h-screen p-2 flex flex-col justify-between">
       <div className="flex flex-col gap-3">
         {navs.upperNav.map((nav) => {
           return (
@@ -30,6 +31,11 @@ const NavBar = () => {
           );
         })}
       </div>
+
+      <div className="transform rotate-90">
+        <Toggle />
+      </div>
+
       <div className="flex flex-col gap-3">
         {navs.lowerNav.map((nav) => {
           return (

@@ -5,6 +5,7 @@ import React from "react";
 import { usePathname } from "next/navigation";
 import { clsx } from "clsx";
 import { Navigations, navigations } from "@/models/navigations";
+import Toggle from "./Toggle";
 
 const NavBar = () => {
   const pathname = usePathname();
@@ -30,6 +31,11 @@ const NavBar = () => {
           );
         })}
       </div>
+
+      <div className="transform rotate-90">
+        <Toggle />
+      </div>
+      
       <div className="flex flex-col gap-3">
         {navs.lowerNav.map((nav) => {
           return (

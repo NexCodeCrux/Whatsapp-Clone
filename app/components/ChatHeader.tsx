@@ -36,13 +36,13 @@ const ChatHeader = () => {
         </div>
       </div>
       <div className="w-full flex items-center gap-2 px-3">
-        <div className="flex-grow flex items-center py-1 px-2 border-none bg-wa-light-secondary_lighter dark:bg-wa-dark-background-lighter rounded-md">
+        <div className="flex-grow flex items-center py-1 px-2 border-none bg-gray-100 dark:bg-wa-dark-background-lighter rounded-md">
           <svg
             viewBox="0 0 24 24"
             height="24"
             width="24"
             preserveAspectRatio="xMidYMid meet"
-            className="text-wa-light-icon"
+            className="text-wa-light-secondary_lighter"
             version="1.1"
             x="0px"
             y="0px"
@@ -65,7 +65,7 @@ const ChatHeader = () => {
           height="20"
           width="20"
           preserveAspectRatio="xMidYMid meet"
-          className="text-wa-light-icon cursor-pointer"
+          className="text-wa-light-secondary_lighter cursor-pointer"
           fill="none"
         >
           <title>filter</title>

@@ -3,7 +3,7 @@ import { PinnedIconRounded } from "./CustomIcons";
 
 const Chat = () => {
   return (
-    <div className=" dark:text-[#E9EDEF] dark:hover:bg-[#111B21] w-full flex items-center overflow-x-hidden hover:bg-gray-100 cursor-pointer">
+    <div className="dark:hover:bg-wa-dark-background-lighter w-full flex items-center overflow-x-hidden hover:bg-gray-100 cursor-pointer">
       <div className="w-[90px] flex justify-center px-1 items-center">
         <Image
           alt="user profile"
@@ -13,21 +13,21 @@ const Chat = () => {
           className="rounded-full"
         />
       </div>
-      <div className="flex-grow py-3 pr-4 border-b flex flex-col items-center overflow-x-hidden">
+      <div className="flex-grow py-3 pr-4 border-b dark:border-b-wa-dark-primary flex flex-col items-center overflow-x-hidden">
         <div className="flex w-full justify-between items-center">
           <h2 className="text-[1.2rem]">Mofiro Jean (You)</h2>
-          <span className="text-xs text-gray-500">Sunday</span>
+          <span className="text-xs text-wa-light-secondary_lighter dark:text-wa-light-secondary_lighter">Sunday</span>
         </div>
         <div className="w-full flex items-center overflow-hidden">
-          <div className="whitespace-nowrap text-nowrap overflow-hidden text-ellipsis text-sm text-[#8696A0]">
+          <div className="whitespace-nowrap text-nowrap overflow-hidden text-ellipsis text-sm text-wa-light-secondary_lighter dark:text-wa-light-secondary_lighter">
             Lorem ipsum dolor kbnaksd lkjsnjl lkansd iuehifue ouihefioa kuajehfi
             uioehoaihf
           </div>
           <div className="flex gap-1 items-center justify-center ml-1">
-            <div className="flex items-center justify-center bg-green-500 rounded-full h-[20px] w-[22px]">
-              <span className="text-xs font-bold text-white p-1">1</span>
+            <div className="flex items-center justify-center bg-wa-light-primary rounded-full h-[20px] w-[22px]">
+              <span className="text-xs font-bold text-white dark:text-wa-dark-background p-1">1</span>
             </div>
-            <PinnedIconRounded className="text-gray-600" />
+            <PinnedIconRounded className="text-wa-light-icon dark:text-wa-dark-secondary" />
           </div>
         </div>
       </div>
@@ -44,7 +44,7 @@ export const ArchiveChat = () => {
           height="20"
           width="20"
           preserveAspectRatio="xMidYMid meet"
-          className="text-green-600"
+          className="text-wa-light-primary"
           fill="none"
         >
           <title>archived</title>
@@ -54,9 +54,9 @@ export const ArchiveChat = () => {
           ></path>
         </svg>
       </div>
-      <div className="flex-grow-1 py-3 pr-4 w-full border-b flex items-center justify-between">
+      <div className="flex-grow-1 py-3 pr-4 w-full border-b dark:border-b-wa-dark-primary flex items-center justify-between">
         <span>Archived</span>
-        <span className="text-xs font-bold text-green-500">7</span>
+        <span className="text-xs font-bold text-wa-light-primary">7</span>
       </div>
     </div>
   );

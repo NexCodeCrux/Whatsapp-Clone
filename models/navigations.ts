@@ -59,7 +59,7 @@ export const navigations: Navigations = {
       iconFilled: SettingIconRounded,
     },
     {
-      href: "/ProfileProfile",
+      href: "/Profile",
       name: "Profile",
       icon: Person2Outlined,
       iconFilled: Person2Rounded,

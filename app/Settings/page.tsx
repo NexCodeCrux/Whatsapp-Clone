@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import SettingsHeader from "../components/SettingsHeader";
 
 const Settings = () => {
   return (
-    <div>Settings</div>
-  )
-}
+    <div className="">
+      <SettingsHeader />
+    </div>
+  );
+};
 
-export default Settings
+export default Settings;

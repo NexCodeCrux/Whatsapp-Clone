@@ -1,9 +1,13 @@
+import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const SettingsHeader = () => {
   return (
     <div className="flex flex-col">
       <h1 className="text-xl font-extrabold px-5 p-4">Settings</h1>
+
+      {/* search bar */}
       <div className="w-full items-center gap-2 px-3 py-1">
         <div className="flex-grow flex items-center py-1 px-2 border-none bg-gray-100 dark:bg-wa-dark-background-lighter rounded-md">
           <svg
@@ -25,9 +29,24 @@ const SettingsHeader = () => {
           </svg>
           <input
             type="text"
-            placeholder="Search"
+            placeholder="Search Settings"
             className="flex-grow placeholder:text-wa-light-secondary_lighter px-4 ml-2 bg-transparent focus:bg-transparent active:bg-transparent active:outline-none focus:outline-none text-sm"
           />
+        </div>
+      </div>
+
+      {/* User section */}
+      <div className="flex items-center py-5 px-3 gap-5">
+        <Image
+          src="/user.jpg"
+          width={80}
+          height={80}
+          alt="user Image"
+          className="rounded-full"
+        />
+        <div className="flex flex-col">
+            <h1>Mofiro Jean</h1>
+            <p className="text-sm">Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import React from "react";
 
 const SettingsHeader = () => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col ">
       <h1 className="text-xl font-extrabold px-5 p-4">Settings</h1>
 
       {/* search bar */}
@@ -36,11 +36,11 @@ const SettingsHeader = () => {
       </div>
 
       {/* User section */}
-      <div className="flex items-center py-5 px-3 gap-5">
+      <Link href={`/Settings/User`} className="flex items-center py-5 px-3 gap-5 cursor-pointer hover:bg-wa-dark-primary">
         <Image
           src="/user.jpg"
-          width={80}
-          height={80}
+          width={82}
+          height={82}
           alt="user Image"
           className="rounded-full"
         />
@@ -48,7 +48,7 @@ const SettingsHeader = () => {
             <h1>Mofiro Jean</h1>
             <p className="text-sm">Lorem ipsum dolor sit amet.</p>
         </div>
-      </div>
+      </Link>
     </div>
   );
 };

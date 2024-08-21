@@ -36,7 +36,7 @@ const SettingsHeader = () => {
       </div>
 
       {/* User section */}
-      <Link href={`/Settings/User`} className="flex items-center py-5 px-3 gap-5 cursor-pointer hover:bg-wa-light-background dark:hover:bg-wa-dark-primary">
+      <Link href={`/Profile`} className="flex items-center py-5 px-3 gap-5 cursor-pointer hover:bg-wa-light-background dark:hover:bg-wa-dark-primary">
         <Image
           src="/user.jpg"
           width={82}
@@ -46,7 +46,7 @@ const SettingsHeader = () => {
         />
         <div className="flex flex-col">
             <h1>Mofiro Jean</h1>
-            <p className="text-sm text-wa-light-icon">Lorem ipsum dolor sit amet.</p>
+            <p className="text-sm text-wa-dark-secondary_lighter">Lorem ipsum dolor sit amet.</p>
         </div>
       </Link>
     </div>

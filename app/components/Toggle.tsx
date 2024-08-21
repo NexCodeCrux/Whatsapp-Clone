@@ -5,7 +5,7 @@ import { WbSunny } from "@mui/icons-material";
 import { ModeNight } from "@mui/icons-material";
 
 const Toggle = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     const theme = localStorage.getItem("theme");

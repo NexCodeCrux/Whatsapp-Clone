@@ -15,9 +15,9 @@ const SettingsList = () => {
     <div className="flex flex-col max-h-screen overflow-y-auto">
       <Link
         href={`/Settings/Account`}
-        className="flex gap-5 px-5 pt-2 hover:bg-wa-dark-primary"
+        className="flex gap-5 px-5 pt-2 hover:bg-wa-light-background dark:text-wa-dark-text  text-wa-dark-background-lighter dark:hover:bg-wa-dark-primary"
       >
-        <AccountCircle />
+        <AccountCircle className="" />
         <div className="w-full">
           <h1 className=" border-b dark:border-b-wa-dark-primary pb-5">
             Account
@@ -25,10 +25,10 @@ const SettingsList = () => {
         </div>
       </Link>
       <Link
-        href={`/Settings/Account`}
-        className="flex gap-5 px-5 pt-2 hover:bg-wa-dark-primary"
+        href={`/Settings/Privacy`}
+        className="flex gap-5 px-5 pt-2 hover:bg-wa-light-background dark:text-wa-dark-text text-wa-dark-background-lighter dark:hover:bg-wa-dark-primary"
       >
-        <SecurityLock />
+        <SecurityLock className="" />
         <div className="w-full">
           <h1 className=" border-b dark:border-b-wa-dark-primary pb-5">
             Privacy
@@ -36,10 +36,10 @@ const SettingsList = () => {
         </div>
       </Link>
       <Link
-        href={`/Settings/Account`}
-        className="flex gap-5 px-5 pt-2 hover:bg-wa-dark-primary"
+        href={`/Settings/Chats`}
+        className="flex gap-5 px-5 pt-2 hover:bg-wa-light-background dark:text-wa-dark-text text-wa-dark-background-lighter dark:hover:bg-wa-dark-primary"
       >
-        <ChatsFilled />
+        <ChatsFilled className="" />
         <div className="w-full">
           <h1 className=" border-b dark:border-b-wa-dark-primary pb-5">
             Chats
@@ -47,10 +47,10 @@ const SettingsList = () => {
         </div>
       </Link>
       <Link
-        href={`/Settings/Account`}
-        className="flex gap-5 px-5 pt-2 hover:bg-wa-dark-primary"
+        href={`/Settings/Notifications`}
+        className="flex gap-5 px-5 pt-2 hover:bg-wa-light-background dark:text-wa-dark-text text-wa-dark-background-lighter dark:hover:bg-wa-dark-primary"
       >
-        <SettingsNotification />
+        <SettingsNotification className="" />
         <div className="w-full">
           <h1 className=" border-b dark:border-b-wa-dark-primary pb-5">
             Notifications
@@ -58,10 +58,10 @@ const SettingsList = () => {
         </div>
       </Link>
       <Link
-        href={`/Settings/Account`}
-        className="flex gap-5 px-5 pt-2 hover:bg-wa-dark-primary"
+        href={`/Settings/Shortcuts`}
+        className="flex gap-5 px-5 pt-2 hover:bg-wa-light-background dark:text-wa-dark-text text-wa-dark-background-lighter dark:hover:bg-wa-dark-primary"
       >
-        <SettingsKeyboard />
+        <SettingsKeyboard className="" />
         <div className="w-full">
           <h1 className=" border-b dark:border-b-wa-dark-primary pb-5">
             Keyboard shortcuts
@@ -69,20 +69,20 @@ const SettingsList = () => {
         </div>
       </Link>
       <Link
-        href={`/Settings/Account`}
-        className="flex gap-5 px-5 pt-2 hover:bg-wa-dark-primary"
+        href={`/Settings/Help`}
+        className="flex gap-5 px-5 pt-2 hover:bg-wa-light-background dark:text-wa-dark-text text-wa-dark-background-lighter dark:hover:bg-wa-dark-primary"
       >
-        <HelpFilled />
+        <HelpFilled className="" />
         <div className="w-full">
           <h1 className=" border-b dark:border-b-wa-dark-primary pb-5">Help</h1>
         </div>
       </Link>
       <Link
-        href={`/Settings/Account`}
-        className="flex gap-5 px-5 pt-2 hover:bg-wa-dark-primary"
+        href={`/Settings/LogOut`}
+        className="flex gap-5 px-5 pt-2 hover:bg-wa-light-background dark:hover:bg-wa-dark-primary text-red-400"
       >
-        <Exit />
-        <div className="w-full">
+        <Exit className="" />
+        <div className="w-full ">
           <h1 className=" border-b dark:border-b-wa-dark-primary pb-5">
             Log Out
           </h1>

@@ -49,8 +49,8 @@ export const AccountCircle = ({ className = "" }) => {
   return (
     <svg
       viewBox="0 0 24 24"
-      height="24"
-      width="24"
+      height="30"
+      width="30"
       preserveAspectRatio="xMidYMid meet"
       className=""
       fill="none"
